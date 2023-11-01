@@ -4,77 +4,202 @@
         <title>Driftito</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="driftitostyle.css">
+        <!-- for Bootstrap coding-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     </head>
+
     <body>
+        <!--Top logo of Driftito-->
         <div id="top-logo-container">
             <img src="Driftito Logo.png" id="logo">
         </div>
-        <div id="top-menu">
-            <a href="#logo" class="menu">Home</a>
-            <a href="#rates" class="menu">Rates</a>
-            <a href="" class="menu">Party Package</a>
-            <a href="#branches" class="menu">Locations</a>
-            <a href="" class="menu">Products</a>
-            <a href="" class="menu" id="end">Contacts Us</a>
-        </div>
 
+         <!--Nav Part-->
+         <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #000">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                    <ul class="navbar-nav flex-column flex-sm-row">
+                        <li class="nav-item"><a id="nav1" class="nav-link fw-semibold flex-sm-fill text-sm-center active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a id="nav2" class="nav-link fw-semibold flex-sm-fill text-sm-center" href="#locations">Locations</a></li>
+                        <li class="nav-item"><a id="nav3" class="nav-link fw-semibold " href="#rates">Rates</a></li>
+                        <li class="nav-item"><a id="nav4" class="nav-link fw-semibold " href="#party-package">Party Package</a></li>
+                        <li class="nav-item"><a id="nav5" class="nav-link fw-semibold " href="#franchise">Franchise</a></li>
+                        <li class="nav-item"><a id="nav6" class="nav-link fw-semibold " href="#products">Products</a></li>
+                        <li class="nav-item"><a id="nav7" class="nav-link fw-semibold " href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+
+        <!--separator flag--> 
         <div class="separator"></div>
 
-        <div class="first-container">
+
+        <main class="first-container">
             <h1>LET'S MAKE DRIFTING AN EVERYDAY THING!</h1>
-        </div>
-        <div class="second-container">
-            <div class="hero-image">
-                <div class="hero-text">
-                    <h2>DO THE DRIFT NOW!</h2>
-                    <button>Find the nearest branch to you!</button>
+     
+            <!--carousel-->
+            <div id="myCarousel" class="carousel slide carousel-fade object-fit-cover">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <!--carousel container-->
+                <div class="carousel-inner">
+                    <!--First carousel-->
+                    <div class="carousel-item active">
+                        <img src="southmall.jpg" class="d-block w-100 object-fit-lg-contain" alt="...">
+
+                        <!--First carousel caption-->
+                        <div class="carousel-caption d-none d-md-block" id="carousel1">
+                            <h3 class="fw-bolder">DO THE DRIFT NOW!</h3>
+                            <div class="d-grid gap-2 col-7 mx-auto">
+                                <button class="btn btn-light" type="button">Find the nearest Branch</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--second carousel-->
+                    <div class="carousel-item">
+                        <img src="Cloverleaf.jpg" class="d-block w-100 object-fit-lg-contain" alt="...">
+
+                        <!--second carousel caption-->
+                        <div class="carousel-caption d-none d-md-block" id="carousel2">
+                            <h3 class="fw-bolder">BE A DRIFTITO/DRIFTITA!</h3>
+                            <div class="d-grid gap-2 col-7 mx-auto">
+                                <button class="btn btn-light" type="button">Find the nearest Branch</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--third carousel-->
+                    <div class="carousel-item">
+                        <img src="Tutuban.jpg" class="d-block w-100 object-fit-lg-contain" alt="...">
+
+                        <!--third carousel caption-->
+                        <div class="carousel-caption d-none d-md-block" id="carousel3">
+                            <h3 class="fw-bolder">MAKE YOUR DRIFTING DREAM COME TRUE!</h3>
+                            <div class="d-grid gap-2 col-7 mx-auto">
+                                <button class="btn btn-light" type="button">Find the nearest Branch</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--button-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-        </div>
 
+        <!--black and white separator-->
         <div class="separator-2"></div>
 
-        <h1 id="branches" class="text-align">BRANCHES</h1>
+        <!--Third container containing the branches-->
         <div class="third-container">
-            <div class="content-container">
-                <img src="southmall.jpg" class="text-image">
-                <div class="text-container">
-                    <h3>SM SOUTHMALL</h3>
-                    <span id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh venenatis cras sed felis eget velit aliquet sagittis. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Nunc lobortis mattis aliquam faucibus purus in massa tempor nec. </span>
+            <!--Header for third container branches-->
+            <h1 id="branches" class="text-align">BRANCHES</h1>
+
+            <!--branch cards-->
+            <div class="card-container row row-cols-1 row-cols-md-2 g-0">
+                <!--first column-->
+                <div class="col">
+                    <!--left picture card-->
+                    <div class="card mb-3 text-center">
+                        <div class="row g-0">
+                            <!--picture of card-->
+                            <div class="col-md-7 g-0 embed-responsive embed-responsive-16by9">
+                                <img src="southmall.jpg" class="img-fluid  rounded-start embed-responsive-item" alt="...">
+                            </div>
+                            <!--text of card-->
+                            <div class="col-md-5">
+                                <div class="card-body">
+                                    <h4 class="card-title fw-bolder">SM Southmall</h4> <!--Southmall-->
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead</p>
+                                    <a href="#" class="btn btn-dark button">Directions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="third-container">
-            <div class="content-container">
                 
-                <div class="text-container">
-                    <h3>AYALA CLOVERLEAF</h3>
-                    <span id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh venenatis cras sed felis eget velit aliquet sagittis. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Nunc lobortis mattis aliquam faucibus purus in massa tempor nec. </span>
+                <div class="col">
+                    <!--left picture card-->
+                    <div class="card mb-3 text-center">
+                        <div class="row g-0">
+                            <!--picture of card-->
+                            <div class="col-md-7 g-0">
+                                <img src="Cloverleaf.jpg" class="img-fluid  rounded-start" alt="...">
+                            </div>
+                            <!--text of card-->
+                            <div class="col-md-5">
+                                <div class="card-body">
+                                    <h4 class="card-title fw-bolder">Ayala Cloverleaf</h4> <!--Ayala Cloverleaf-->
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead</p>
+                                    <a href="#" class="btn btn-dark button">Directions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img src="southmall.jpg" class="text-image">
-            </div>
-        </div>
-        <div class="third-container">
-            <div class="content-container">
-                <img src="southmall.jpg" class="text-image">
-                <div class="text-container">
-                    <h3>ROBINSONS PAMPANGA</h3>
-                    <span id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh venenatis cras sed felis eget velit aliquet sagittis. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Nunc lobortis mattis aliquam faucibus purus in massa tempor nec. </span>
+
+
+                <!--second column-->
+                <div class="col">
+                    <!--left picture card-->
+                    <div class="card mb-3 text-center">
+                        <div class="row g-0">
+                            <!--picture of card-->
+                            <div class="col-md-7 g-0">
+                                <img src="Tutuban.jpg" class="img-fluid  rounded-start" alt="...">
+                            </div>
+                            <!--text of card-->
+                            <div class="col-md-5">
+                                <div class="card-body">
+                                    <h4 class="card-title fw-bolder">Tutuban Center</h4> <!--Tutuban Center-->
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead</p>
+                                    <a href="#" class="btn btn-dark button">Directions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <!--left picture card-->
+                    <div class="card mb-3 text-center">
+                        <div class="row g-0">
+                            <!--picture of card-->
+                            <div class="col-md-7 g-0">
+                                <img src="southmall.jpg" class="img-fluid  rounded-start" alt="...">
+                            </div>
+                            <!--text of card-->
+                            <div class="col-md-5">
+                                <div class="card-body">
+                                    <h4 class="card-title fw-bolder">Robinsons Pampanga</h4> <!--Robinsons Pampanga-->
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead</p>
+                                    <a href="#" class="btn btn-dark button">Directions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
             </div>
+
         </div>
-        <div class="third-container">
-            <div class="content-container">
-                
-                <div class="text-container">
-                    <h3>TUTUBAN CENTER</h3>
-                    <span id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh venenatis cras sed felis eget velit aliquet sagittis. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Nunc lobortis mattis aliquam faucibus purus in massa tempor nec. </span>
-                </div>
-                <img src="southmall.jpg" class="text-image">
-            </div>
-        </div>
+
 
         <div class="separator-2"></div>
 
@@ -82,31 +207,31 @@
             <h1>RATES</h1>
             <div id="table-format">
                 <table >
-                    <tr>
+                    <tr id="head">
                         <th></th>
                         <th>Kiddie Size</th>
                         <th>Regular Size</th>
                         <th>XL Size</th>
                     </tr>
-                    <tr>
+                    <tr id="tr1">
                         <td>10 minutes</td>
                         <td>Php 200</td>
                         <td>Php 200</td>
                         <td>Php 200</td>
                     </tr>
-                    <tr>
+                    <tr id="tr2"> 
                         <td>15 minutes</td>
                         <td>Php 800</td>
                         <td>Php 200</td>
                         <td>Php 200</td>
                     </tr>
-                    <tr>
+                    <tr id="tr3">
                         <td>30 minutes</td>
                         <td>Php 450</td>
                         <td>Php 200</td>
                         <td>Php 200</td>
                     </tr>
-                    <tr>
+                    <tr id="tr4">
                         <td>1 hour</td>
                         <td>Php 250</td>
                         <td>Php 200</td>
@@ -117,31 +242,111 @@
                     As of September 2023, can be subject to change without prior notice. 
                 </p>
                 <p>
-                    P.S. Kids size is good for 2-6 years old, adults are good for 7 years and above, XL are good for heavier weight adults. 
+                    P.S. Kids size is good for 2-7 years old, adults are good for 7 years and above, XL are good for heavier weight adults. 
                 </p>
             </div>
             <br>
             <h1>PARTY PACKAGES</h1>
-            <h3 class="text-align">SM Southmall</h3>
-            <img src="southmall.jpg" class="packages-image">
-            <h3 class="text-align">Ayala Cloverleaf</h3></3>
-            <img src="southmall.jpg" class="packages-image">
+            <div class="package-container">
+                <div class="package-internal-container">
+                    <h3 class="text-align fw-bolder">SM Southmall</h3>
+                    <img src="Southmall Group Package.jpg" class="packages-image">
+                </div>
+                <div class="package-internal-container">
+                    <h3 class="text-align fw-bolder">Ayala Cloverleaf</h3></3>
+                    <img src="CloverleafGroupPackage.jpg" class="packages-image">
+                </div>
+            </div>
         </div>
 
         
         <div class="separator-2"></div>
 
+
+        <!--products section-->
         <div class="third-container">
             <h1>PRODUCTS</h1>
+
+            <!--carousel for the products-->
+            <div id="myCarousel" class="carousel slide carousel-fade object-fit-cover">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <!--carousel container-->
+                <div class="carousel-inner">
+                    <!--First carousel-->
+                    <div class="carousel-item active">
+                        <img src="southmall.jpg" class="d-block w-100 object-fit-lg-contain" alt="...">
+
+                        <!--First carousel caption-->
+                        <div class="carousel-caption d-none d-md-block" id="carousel1">
+                            <h3 class="fw-bolder">DO THE DRIFT NOW!</h3>
+                            <div class="d-grid gap-2 col-7 mx-auto">
+                                <button class="btn btn-light" type="button">Find the nearest Branch</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--second carousel-->
+                    <div class="carousel-item">
+                        <img src="Cloverleaf.jpg" class="d-block w-100 object-fit-lg-contain" alt="...">
+
+                        <!--second carousel caption-->
+                        <div class="carousel-caption d-none d-md-block" id="carousel2">
+                            <h3 class="fw-bolder">BE A DRIFTITO/DRIFTITA!</h3>
+                            <div class="d-grid gap-2 col-7 mx-auto">
+                                <button class="btn btn-light" type="button">Find the nearest Branch</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--third carousel-->
+                    <div class="carousel-item">
+                        <img src="Tutuban.jpg" class="d-block w-100 object-fit-lg-contain" alt="...">
+
+                        <!--third carousel caption-->
+                        <div class="carousel-caption d-none d-md-block" id="carousel3">
+                            <h3 class="fw-bolder">MAKE YOUR DRIFTING DREAM COME TRUE!</h3>
+                            <div class="d-grid gap-2 col-7 mx-auto">
+                                <button class="btn btn-light" type="button">Find the nearest Branch</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--button-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
         </div>
 
 
-        <div id="footer" class="first-container">
-            <p>All Rights Reserved by Driftito. 2023</p>
+        <!--separator flag--> 
+        <div class="separator-2"></div>
 
+
+        <!--footer-->
+        <div class="container">
+            <footer class="py-1 my-1">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3 border-dark border-2">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+              </ul>
+              <p class="text-center text-body-secondary">&copy; 2023 Driftito Philippines. All rights reserved.</p>
+            </footer>
         </div>
-
-
+    </main>
 
     </body>
 </html>
